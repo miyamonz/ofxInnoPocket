@@ -49,6 +49,9 @@ namespace inno{
         };
         return colorString;
     }
+    vector<string >getGoboStrings(){
+        return {"open","scope","radiobig","radiosmall","stone","bubble","wind","mirror"};
+    }
     
     ofColor stringToColor(string s){
         if(s == "white"    ) return ofColor::white    ;

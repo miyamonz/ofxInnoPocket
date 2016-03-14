@@ -6,8 +6,9 @@ namespace inno {
     
     vector<ofColor > getColors();
     vector<string >  getColorStrings();
-    
+    vector<string >  getGoboStrings();
     ofColor stringToColor(string s);
     
     string colorToString(ofColor c);
+    
 }
