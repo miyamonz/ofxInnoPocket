@@ -11,4 +11,8 @@ namespace inno {
     
     string colorToString(ofColor c);
     
+    int getDmxFromColorString(string color);
+    int getDmxFromStrobe(float strobe);
+    int getDmxFromDimmer(float dimmer);
+    int getDmxFromGobo(string gobo);
 }

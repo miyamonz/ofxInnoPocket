@@ -77,4 +77,37 @@ namespace inno{
         
         return "white";
     }
+    
+    int getDmxFromColorString(string color){
+        int index = ofFind(getColorStrings(), color);
+        if(index == 0) return 3;
+        if(index == 1) return 10;
+        if(index == 2) return 17;
+        if(index == 3) return 24;
+        if(index == 4) return 31;
+        if(index == 5) return 36;
+        if(index == 6) return 45;
+        if(index == 7) return 52;
+        return -1;
+    }
+    int getDmxFromStrobe(float strobe){
+        return ofMap(strobe, 0,100,16,132);
+    }
+    int getDmxFromDimmer(float dimmer){
+        return dimmer;
+    }
+    int getDmxFromGobo(string gobo){
+        int index = ofFind(getGoboStrings(), gobo);
+        if(index == 0) return 5;
+        if(index == 1) return 10;
+        if(index == 2) return 20;
+        if(index == 3) return 30;
+        if(index == 4) return 35;
+        if(index == 5) return 45;
+        if(index == 6) return 50;
+        if(index == 7) return 70;
+        return -1;
+    }
+
+
 }
